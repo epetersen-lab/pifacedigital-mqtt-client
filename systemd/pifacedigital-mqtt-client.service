@@ -1,0 +1,11 @@
+[Unit]
+Description=PiFace Digital MQTT Client Service
+After=network.target
+
+[Service]
+User=pi
+ExecStart=pifacedigital-mqtt-client
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
